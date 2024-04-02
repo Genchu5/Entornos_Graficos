@@ -1,0 +1,80 @@
+Ejercitación 2
+
+2.a)
+<!-- Código controlado el día 12/08/2009 -->
+
+Es un comentario, el cual probablemente puede ir al inicio o al final de un código html para avisar que fue chequeado en esa fecha. 
+
+<!-- --> - Estructura de comentario
+Código controlado el día 12/08/2009 - Contenido
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+
+La etiqueta div define un bloque de contenido, en este caso iría probablemente en el cuerpo del código. Contiene un atributo id, para que luego sea identificado a través de él. Esto simplemente generaría una oración visible en la página.
+
+<div> </div> - Estructura div
+id=”bloque1” - id del elemento
+Contenido del bloque1 - Contenido
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+
+El elemento img, es para visualizar una imagen. “src” es imprescindible para poder colocar una imagen. Indica dónde se encuentra alojada la imagen a mostrar. Puede agregarse una descripción de la imagen dentro de la misma para que pueda leerse al mantener el ratón encima de ella, para eso se usa el atributo “alt” . “name” el nombre de la imagen según la página. “longdesc” se usa como una URL para una descripción más larga; es complementaria a “alt”. “width” y “height” determinan el ancho y altura de la imagen en la página.
+<img> - estructura de elemento vacío img
+src="" - se utiliza para indicar la ruta de la imagen
+alt="lugar imagen" - pequeña descripción de la imagen
+id="im1" - id del elemento
+name="im1" - nombre de la imagen
+width="32" - atributo de anchura
+height="32" -  atributo de altura
+longdesc="detalles.htm" - descripción larga a través de una URL
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+“meta” sirve para aportar información sobre el documento. lang indica el idioma de la página. content, el contenido más relevante, de lo que se va a tratar en general. http-equiv aporta información sobre los encabezado de respuesta HTTP, se puede usar en vez de name.
+
+<meta> - estructura del elemento meta
+name="keywords" - nombre del contenido
+lang="es" - idioma
+content="casa, compra, venta, alquiler " - palabras claves
+ 
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a>
+
+La etiqueta “a” crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. En href se indica el hipervínculo destino. type especifica el tipo de medio (media type) en la forma de MIME type (en-US) para la URL enlazada. hreflang indica el lenguaje humano del recurso al que se enlaza. rel especifica la relación del objeto de destino con el objeto de enlace. charset define la codificación de caracteres (character encoding) de la URL enlazada (igualmente en HTML5 este atributo está obsoleto.
+
+<a> </a> - estructura de la etiqueta anchor
+href="http://www.e-style.com.ar/resumen.html" -
+type="text/html" - tipo de medio
+hreflang="es" - lenguaje humano del recurso al que se enlaza
+charset="utf-8" - define la codificación de caracteres
+ rel="help" - este tipo indica que el link da información sobre los padres y descendientes de este elemento 
+Resumen HTML - contenido del elemento, es el que se verá como texto del link
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
