@@ -1,0 +1,34 @@
+Ejercitación 1:
+
+1. ¿Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+Es un lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones.
+Fue desarrollado durante los años 90 por Tim Berners-Lee y fue popularizado por el navegador Mosaic.
+Las versiones anteriores de html son: HTML 2.0, HTML 3.2, HTML 4.0, HTML 4.01. HTML 5 es la última versión a la fecha, la quinta revisión más importante. 
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML?
+ -1. Un esquema uniforme de nombres para localizar recursos en la Web (p.ej., URIs).
+ -2. Protocolos, para acceder a recursos con nombre en la Web (p.ej., HTTP). 
+ -3. Hipertexto, para navegar fácilmente entre recursos (p.ej., HTML).
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y obsoleto?
+
+Antes de la llegada de las hojas de estilo, los autores utilizaban las tablas y las imágenes como medio de organizar la presentación de sus páginas. Al ofrecer las hojas de estilo mecanismos de presentación más potentes, el W3C declarará obsoletos en el futuro muchos de los elementos y atributos de presentación del HTML, anteriores. A lo largo de esta especificación dichos elementos y atributos se marcan como "desaprobados".
+
+4. Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+
+Un DTD (Document Type Definition) es un conjunto de reglas sintácticas para definir etiquetas. Nos definen etiquetas y elementos que se pueden usar en esta versión.
+Nuevas hojas de estilo para el documento basadas en los estilos de los informes técnicos del W3C.
+Se añadió una tabla de contenidos abreviada.
+Se actualizó el copyright.
+Se eliminaron partes de código que hacían que algunos navegadores se colgaran.
+Se añadió a Shane McCarron a la sección de agradecimientos.
+En la sección 1.4 se eliminaron los detalles del copyright para hacer referencia al sitio del W3C en su lugar.
+Las referencias al conjunto de caracteres del documento son todas a la ISO 10646 (y una vez a UNICODE para señalar su equivalencia). Las referencias a UNICODE se refieren sólo al algoritmo bidireccional.
+Los ejemplos usan ahora FPIs con fecha.
+
+5. ¿Qué son los metadatos y cómo se especifican en HTML?
+
+El HTML permite a los autores especificar metadatos -- información sobre un documento más que contenido del propio documento -- de diferentes maneras.
+En HTML se especifican con la etiqueta “meta” ej:
+<META name="UTN" content="Facultad tecnologica">
+
