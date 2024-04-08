@@ -1,0 +1,99 @@
+Ejercitación 3
+En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
+
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+<a href="#">Click aquí para ir a Google</a>
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+
+-En la primer línea: se coloca en pantalla con el nombre "Click aquí para ir a Google" un link y se abre en la misma pestana
+-En la segunda linea: de igual manera se coloco en link en pantalla pero con el nombre que se desee. pero a la hora de abrirlo, te redirecciona a una nueva pestana
+-En la tercer linea: se especifica el tipo de contenido relacionado con el buscador con el atributo type; especifica el idioma "es" con el atributo reglang;
+el tipo de caracteres que se utiliza con charset y la relacion entre la pagina donde estamos y a la que se redirecciona al usuario. Visualmente no podemos ver nada, 
+ya que la etiqueta no esta cerrada y tampoco tiene contenido dentro de la etiqueta
+-En la cuarta linea: en esta linea el href no existe,se utiliza como marcador pero en este caso no tiene ninguna ubicación para lo mismo, por lo tanto no nos envia 
+a ninguna web, pero sin embargo por pantalla aparece el contendio y con el formato de link
+-En la quinta linea: en este caso el marcador esta nombrado pero no hubicado, no tiene donde ir, pasa lo mismo que en el anterior
+-En la sexta linea: el marcador esta efectivamente nombrado y marcado, por tanto al utilizarlo nos dirije hacia "arriba" por el id, en pantalla no vemos ningun cambio
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a
+href="http://www.google.com.ar">Click aquí</a></p>
+
+-En la primer linea: se coloca una imagen y al costado un link 
+-En la segunda linea: el link esta dentro de la imagen, es decir al seleccionar la imagen nos envia a una pagina nieva, tambien aparece la palabra "Click aqui"
+-En la tercer linea: sucede lo mismo que en la segunda, una imagen con link, en este caso la palabra tambien es link, al seleccionarla te envía a otra pagina
+-En la cuarta linea: la imagen tiene un link y  aparte hay otro link en la palabra "Click aqui" 
+
+
+3.c)
+
+En la primer fila de la tabla vemos una lista desordenada con 3 elementos (con items)
+En la segunda fila la diferencia es que la lista esta ordenada (con numeros)
+En la tercer fila se realizan 3 listas ordenadas, pero que cada una tiene un solo elemento al cual se le designa el valor numerico con el atributo value 
+En la cuarta fila se utiliza para citar un bloque de texto de otro lugar, y esta ordenado como una lista utilizando el br para salto de linea
+
+3.d)
+
+La diferencia entre las dos tablas es como realizan la estructura de las celdas cabeceras, en la primer tabla se uso el atributo correspondiente para marcar 
+una celda como cabecera. En la segunda tabla se realiza de manera "manual" colocando atributo por atributo para que la palabra en pantalla sea igual a un cabezal estructuralmente no tienen el mismo peso
+
+
+3.e) 
+
+La diferencia entre las dos tablas es el como se realiza el titulo de la tabla, en el primer bloque se utiliza la etiqueta para ello y en el segundo bloque 
+se utiliza una fila con una celda con el atributo colspan para extenderse por todas las columnas , donde dicha celda tiene la palabra resaltada y centrada 
+
+3.f)
+
+La diferencia entre estos dos bloques es el como se utiliza el atributo rowspan y  colspan, en rowspan se utiliza para unir celdas de distintas filas y el  colspan
+se utiliza para unir celdas en la misma fila. Tambien se tiene en cuenta el uso de esto, para luego colocar las celdas correspondientes, no es que realmente une celdas 
+si no que utiliza el espacio de varias celdas, por ello es importante reducir la cantidad de celdas si se realiza el uso de este atributo
+
+3.g)
+
+La diferencia es su estructura en primer lugar la tabla del bloque 1 tiene espaciados entre los bordes y es una tabla de 3 celdas y 3 filas de las cuales la primer fila se usa para el titulo
+y las siguientes 2 estan fusionadas con dos celdas generando un 2x2 de celdas unidas. En cambio en el bloque 2 se encuentran sin espaciodos las lineas de la tabla y estamos frente una tabla
+de 3 filas y dos columnas, la primera igual que en el bloque 1 esta utilizada para el titulo y luego las dos siguientes filas estan unidas mediante la primer celda 
+es decir forma un 2x1 de celdas unidas. Visualmente se ven igual ya que ambas en tienen el mismo ancho "200" y ambas tiene que la ultima celda ocupe el 50% del espacio de ancho
+
+3.h)
+
+En este observamos 3 formularios, el primero:
+-El envio de sus datos es hacia una seccion de php bajo el metodo post
+-cuenta con una leyenda, el titulo del formulario 
+-Los elementos del formulario no estan envueltos en la etiqueta "label", si bien funciona no es lo correcto 
+-Sus elementos comienzan auto completados 
+
+En el segundo a diferencia:
+-El formulario no tiene definido la ubicación del envio y su metodo es get
+-No tiene la etiqueta de estructura de un formulario "fieldset" y tampoco cuenta con titulo 
+-Sus elementos si estan encerrados en la etiqueta "label"
+-No estan auto completados 
+
+En el tercero:
+-Sus datos se envian a un email bajo el metodo post 
+-Si se encuentra bajo la estructura del fieldset y tiene titulo 
+-Sus elementos no estan encerrados en la etiqueta "label"
+
+En los tres cuestionarios el boton de enviar esta mal estructurado, se debe colocar dentro de la etiqueta fieldset
+
+3.i)
+Comparamos botones, el primero es un boton con la característica de que es una imagen, es decir que en lugar de una forma geometrica tipica es una imagen 
+personalizada. En el segundo boton vemos un boton normal, con la particularidad de que el contenido que especifica el boton tambien se puede utilizar, no como el primero 
+
+
+3.j)
+En este caso observamos selectores, la primer diferencia es que en el primer caso solo se puede seleccionar una sola opcion, en cambio en el segundo se puede elegir mas de uno 
+esto se logra asignando el mismo nombre a las etiquetas, ya que solo se puede enviar un nombre, no tiene sentido enviar dos veces "lo mismo"
+
+3.k)
+En el primer bloque vemos una lista desplegable, que se encuentra completamente oculta y parar entrar a ella se la debe seleccionar, y luego se despliegan las opciones 
+posibles, en cambio en el segundo bloque vemos la misma lista pero que ya se encuentra desplegada. Tambien en la primer lista podemos seleccionar un elemento unico dentro 
+de las opciones, en cambio en la segunda lista podemos elegir varias opciones gracias al atributo "multiple"
