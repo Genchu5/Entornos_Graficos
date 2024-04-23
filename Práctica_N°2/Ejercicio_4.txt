@@ -1,0 +1,9 @@
+Ejercicio 4
+
+En cuestiones del link, funcionan ambos iguales. Utilizan las pseudoclases para ir modificando el estilo del link, dependiendo si pasamos el cursor por arriba, si ya clickeamos el link.. 
+
+En cuanto a la regla aplicada a los parrafos, el html de la izquierda tendra "font-weight: normal;" debido a que tiene mayor jerarquia la etiqueta interna, que la externa declarada en la hoja de estilos. 
+
+El html de la derecha, tendra font-weight: bold correspondiente a la declaracion del css. 
+
+en cuanto al tamaño de la letra, ambos tendran 14px, por ser la declaracion del la clase "contenido" posterior a la del parrafo. 
