@@ -1,0 +1,65 @@
+
+Ejercicio 1: Responder
+1. ¿ Qué es CSS y para qué se usa?
+    -CSS, significa Cascading Style Sheets (Hojas de Estilo en Cascada), es un lenguaje de estilo utilizado para describir la presentación de un documento HTML (o XML). Básicamente, CSS se utiliza para definir cómo se verá el contenido HTML en términos de diseño, formato, colores, fuentes y disposición en una página web.
+
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+    CSS funciona a base de reglas, es decir, declaraciones sobre el estilo de uno o más
+    elementos. Las hojas de estilo están compuestas por una o más de esas reglas aplicadas a un documento HTML o XML. La regla tiene dos partes: un selector y la
+    declaración. A su vez la declaración está compuesta por una propiedad y el valor que
+    se le asigne.
+    
+    -Ejemplo:
+        h1 {color: red;}
+        h1 es el selector
+        {color: red;}
+        es la declaración 
+    
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+    - Podemos asociar las reglas de estilo a las marcas HTML de tres maneras:
+    • directamente a la marca,
+    • en el head de la página, utlizando el elemento <style> 
+    • o agrupar las reglas de estilo en un archivo independiente con extensión *.css
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados?
+Ejemplifique cada uno.
+    Selectores de tipo: Seleccionan elementos HTML basados en su tipo.Ejemplo:
+        p {
+        color: blue;
+        }
+    Selectores de clase: Seleccionan elementos HTML que tienen un atributo de clase específico.Ejemplo:
+        .destacado {
+        font-weight: bold;
+        }
+    Selectores de ID: Seleccionan un elemento HTML basado en su atributo de ID único.Ejemplo:
+        #cabecera {
+        background-color: gray;
+        }
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+    -Una pseudo-clase en CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Las pseudo-clases permiten aplicar estilos a elementos basados en información que está fuera del ámbito normal de los selectores. Las pseudo-clases más comúnmente utilizadas se aplican a los vínculos (enlaces o enlaces hipertexto) y proporcionan estilos diferentes para los diferentes estados en los que puede estar un enlace.
+   
+    -:link: Esta pseudo-clase se aplica a los vínculos que aún no han sido visitados por el usuario.
+    - :visited: Esta pseudo-clase se aplica a los vínculos que han sido visitados anteriormente por el usuario.
+    - :hover: Esta pseudo-clase se aplica cuando el cursor del ratón se sitúa sobre el enlace.
+    - :active: Esta pseudo-clase se aplica cuando el enlace está siendo activado (cuando se hace clic en él, pero antes de que se complete la acción)
+
+6. ¿ Qué es la herencia?
+
+    La herencia en CSS es un principio mediante el cual los estilos aplicados a un elemento HTML se propagan a sus elementos hijos. Esto significa que si se aplica un estilo a un elemento, los elementos secundarios dentro de él también heredarán ese estilo a menos que se especifique lo contrario.
+
+    La herencia es una parte fundamental de cómo se aplican los estilos en CSS y ayuda a reducir la cantidad de código necesario para diseñar una página web, ya que permite establecer estilos en elementos de alto nivel que se aplicarán automáticamente a los elementos secundarios.
+
+    Sin embargo, no todos los estilos se heredan. Por defecto, las propiedades relacionadas con el texto, como el color y la fuente, suelen heredarse, mientras que las propiedades relacionadas con el diseño, como el tamaño y la posición, generalmente no se heredan.
+
+7. ¿ En qué consiste el proceso denominado cascada?
+    El proceso denominado "cascada" en CSS se refiere a la forma en que se aplican y resuelven los estilos a los elementos HTML cuando hay múltiples reglas que compiten por dar estilo a un mismo elemento. Este proceso se rige por un conjunto de reglas y prioridades definidas en las especificaciones de CSS.
+
+    El proceso de cascada de estilos en CSS consta de varios pasos:
+
+    1.Especificidad: Las reglas CSS tienen diferentes niveles de especificidad que determinan su prioridad cuando compiten por estilizar un mismo elemento. Por ejemplo, una regla con un selector más específico (como un ID) tiene más peso que una regla con un selector menos específico (como un nombre de elemento).
+    2. Origen: Los estilos pueden provenir de diferentes fuentes, como las hojas de estilo externas, las hojas de estilo internas (declaradas dentro de la etiqueta <style> en el documento HTML) y los estilos en línea (declarados directamente en los atributos de estilo de los elementos HTML).
+    3. Orden de declaración: En caso de que dos reglas tengan la misma especificidad y provengan del mismo origen, la regla que aparece más tarde en el código prevalecerá sobre la regla que aparece antes. Este principio se conoce como "última regla prevalece" o "última regla en cascada".
+    4. Importancia: Algunas reglas CSS pueden tener una importancia mayor que otras. Por ejemplo, las reglas declaradas con !important tienen la máxima prioridad y anulan cualquier otra regla, independientemente de su especificidad o orden de declaración.
