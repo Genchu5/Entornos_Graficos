@@ -1,0 +1,34 @@
+Ejercicio 2
+Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.
+
+p#normal {
+font-family: arial,helvetica;
+font-size: 11px;
+font-weight: bold;
+}
+    Al parrafo con la id "normal" le modifica: 
+        - define la fuente como primera opc. arial y la segunda helvetica, si es que la primera no carga
+        - define el tamaño de la letra en 11px
+        - define el tipo de letra en "negrita" 
+
+*#destacado {
+border-style: solid;
+border-color: blue;
+border-width: 2px;
+}
+    El asterisco (*) en CSS se utiliza como selector universal, lo que significa que selecciona todos los elementos en el documento HTML.
+    Entonces, *#destacado selecciona cualquier elemento en el documento HTML que tenga el ID "destacado"
+
+    -modificaria los bordes de la tabla para que sean solidos, de color azul y de 2px de ancho 
+
+    
+#distinto {
+background-color: #9EC7EB;
+color: red;
+}
+    Al parrafo con id "distinto", se le aplica en el fondo el color #9EC7EB, y al texto como tal el color rojo. 
+
+<p id="normal">Este es un párrafo</p>
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+<p id="distinto">Este es el último párrafo</p>
