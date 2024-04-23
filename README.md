@@ -1,2 +1,2 @@
 # Entornos_Graficos
-Práctica de entornos gráficos - UTN
+Prácticas de entornos gráficos - UTN
