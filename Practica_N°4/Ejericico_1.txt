@@ -1,23 +1,25 @@
 <?php                           --> Etiqueta que indica la apertura del código php
-function doble($i) {            -->         
- return $i*2;                   -->
+function doble($i) {            --> funcion que multiplica por 2 la variable i que se ingresa como parametro - llave de apertura de la funcion
+ return $i*2;                   --> la funcion retorna la variable i multiplicada por 2
+}                               --> llave de cierre de la funcion
+$a = TRUE;                      --> asigna el valor TRUE a la variable a - boolean
+$b = "xyz";                     --> asigna el valor "xyz" a la variable b - string
+$c = 'xyz';                     --> asigna el valor 'xyz' a la variable c - string
+$d = 12;                        --> asigna el valor 12 a la variable d - integer
+echo gettype($a);               --> echo, la instruccion se utiliza para imprimir texto en la pantalla de salida 
+echo gettype($b);               --> funcion gettype, devuelve el tipo de variable que se le ingrese por parametro
+echo gettype($c);               --> en estos 4 casos se imprimira el tipo de variable respectivamente de a, b, c, d
+echo gettype($d);               --> ""
+if (is_int($d)) {               --> Estructura de control if, permite la ejecución condicional de fragmentos de código - is_int, comprueba si el parametro ($d) es integer
+ $d += 4;                       --> si el parametro es integer => d=d+4
 }                               -->
-$a = TRUE;                      -->
-$b = "xyz";                     -->
-$c = 'xyz';                     -->
-$d = 12;                        -->
-echo gettype($a);               -->
-echo gettype($b);               -->
-echo gettype($c);               -->
-echo gettype($d);               -->
-if (is_int($d)) {               -->
- $d += 4;                       -->
+if (is_string($a)) {            --> Estructura de control if, permite la ejecución condicional de fragmentos de código - is_string, comprueba si el parametro ($a) es string
+ echo "Cadena: $a";             --> si el parametro es integer => imprime el texto "Cadena: $a"
 }                               -->
-if (is_string($a)) {            -->
- echo "Cadena: $a";             -->
-}                               -->
-$d = $a ? ++$d : $d*3;          -->
-$f = doble($d++);               -->
-$g = $f += 10;                  -->
-echo $a, $b, $c, $d, $f , $g;   --> Etiqueta que indica el cierre del código php
-?> 
+$d = $a ? ++$d : $d*3;          --> Operador ternario ?:, se le asignara un valor integer a d dependiendo si a = true/false. En el caso que sea true, se le incrementa 1 a d y en el caso que sea false, se multiplica d por 3, respectivamente se esos valores se asignan a d. 
+$f = doble($d++);               --> se declara una variable f la cual, usando la funcion doble, se le asigna el doble de d incrementado
+$g = $f += 10;                  --> se le asigna a "g" "f=f+10"
+echo $a, $b, $c, $d, $f , $g;   --> Imprime el valor final de todas las variables
+?>                              --> Etiqueta que indica el cierre del código php
+
+booleanstringstringinteger1xyzxyz184444
