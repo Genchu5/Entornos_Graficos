@@ -1,0 +1,12 @@
+4-Indicar las salidas que produce el siguiente código. Justificar.
+
+SALIDA:
+
+Warning: Undefined variable $flor in C:\xampp\htdocs\pruebas_entornos\prueba2.php on line 4
+
+Warning: Undefined variable $color in C:\xampp\htdocs\pruebas_entornos\prueba2.php on line 4
+El El clavel blanco
+
+los warnings corresponden al primer echo. Al estar antes del include, las variables flor y color no estan definidas todavia
+
+El segundo echo si imprime correctamente las variables porque esta despues del include.

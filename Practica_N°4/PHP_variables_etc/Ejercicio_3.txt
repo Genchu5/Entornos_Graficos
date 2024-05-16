@@ -1,0 +1,3 @@
+3-Explicar para qué se utiliza el siguiente código:
+a) Este codigo genera una tabla de 5 filas por 2 columnas con un borde doble utilizando php
+b)  Este codigo genera una casilla donde se le ingresa una edad y dependiendo que valor se le ingrese indica si es mayor o menor de edad
