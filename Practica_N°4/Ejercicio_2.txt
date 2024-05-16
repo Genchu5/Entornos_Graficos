@@ -1,0 +1,5 @@
+2-Indicar si los siguientes códigos son equivalentes.
+a) Los 3 son equivalentes, los tres codigos imprimen una cadena de numeros del 1 al 10
+b) Los 4 son equivalentes, los cuatros codigos imprimen una cadena de numeros del 1 al 10
+c) Los 2 son equivalentes, ambos códigos imprimen si la variable i es igual a 0 o 1 o 2
+
