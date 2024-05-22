@@ -1,0 +1,26 @@
+Ejercicio 3:
+En cada caso, indicar las salidas correspondientes:
+
+a)
+
+<?php
+$fun = getdate();
+echo "Has entrado en esta pagina a las $fun[hours] horas, con $fun[minutes] minutos y $fun[seconds]
+segundos, del $fun[mday]/$fun[mon]/$fun[year]";
+?>
+
+b)
+
+<?php
+function sumar($sumando1,$sumando2){
+ $suma=$sumando1+$sumando2;
+ echo $sumando1."+".$sumando2."=".$suma;
+}
+sumar(5,6);
+?>
+
+Respuestas:
+
+a) Con la funcion getdate() guarda el momento exacto de cuando entras a la pagina e imprime por ejemplo "Has entrado en esta pagina a las 14 horas, con 21 minutos y 27 segundos, del 22/5/2024"
+
+b) Define una funcion para sumar dos numeros y depsues mostrarlos en pantalla. usa de ejemplo 5 y 6 e imprime "5+6=11"
