@@ -4,26 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Envio de email</title>
 </head>
 <body>
     <form  method="POST" action="">
 
         <div class="form-group">
         <input type="text" class="form-styles" placeholder="Nombre" name="nombre" required="">
-        <i class="input-icon uil uil-user"></i>
         </div>	
 
-        <div class="form-group mt-2">
+        <div >
         <input type="text" class="form-styles" placeholder="Apellido" name="apellido" required="">
-        <i class="input-icon uil uil-user"></i>
         </div>
 
-        <div class="form-group mt-2">
+        <div >
         <input type="email" class="form-styles" placeholder="Email" name="email" autocomplete="off" required="">
-        <i class="input-icon uil uil-at"></i>
         </div>
-        <input class="btn mt-4 a_link" type="submit" value="Enviar email" name="entrada">
+        <input  type="submit" value="Enviar email" name="entrada">
 
     </form>
 </body>
@@ -46,7 +43,7 @@
         
 
         //Cuerpo del mail
-        $token_sistema = rand(100000,999999);
+        
         $body ='
         <!DOCTYPE html>
         <html lang="en">
@@ -80,7 +77,7 @@
         </html>
         ';
 
-        $asunto = "Verifica tu nueva cuenta de Shopping DB";
+        $asunto = "Ejemplo de envio de correo";
         $mail = new PHPMailer(true);
 
         try {
