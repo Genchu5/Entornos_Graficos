@@ -1,0 +1,38 @@
+a) Consulta a una base de datos: Para comenzar la comunicación con un servidor de base de datos MySQL, es
+necesario abrir una conexión a ese servidor. Para inicializar esta conexión, PHP ofrece la función 
+        mysqli_connect (parametros)
+
+
+b) Todos sus parámetros son opcionales, pero hay tres de ellos que generalmente son necesarios:
+        $hostname es un nombre de servidor (dato que debe mosconsultar en nuestra cuenta de hosting).
+        $nombreUsuario es el nombre de usuario de base de datos, nombre que habremos especificado al crear la base de datos (si no lo hemos hecho, puede ser root).
+        $contraseña es la contraseña de acceso para el usuario de base de datos, contraseña que habremos especificado al crear la base de datos.
+        
+        La funcion queda tal que asi: $nombreConexion = mysqli_connect($hostname ,$nombreUsuario , $contraseña);
+
+c)Una vez abierta la conexión, se debe seleccionar una base de datos para su uso, mediante la función
+        mysqli_select_db (parametros)
+
+d)Esta función debe pasar como parámetro
+        $nombreConexion que es el resultado de cuardar la conecxion "mysqli_connect"
+        $nombreBaseDatos es el nombre de la base de datos guardada y previamente creada 
+        La funcion queda tal que asi: mysqli_ select_db ($nombreConexión, $nombreBaseDatos);
+
+
+e)La función mysqli_query () se utiliza para   
+        ejecutar una consulta a la base de datos que especifiquemos.
+
+f)y requiere como parámetros
+        $nombreCoxion es el que se da con la funcion "$nombreConexion"
+        $query se refiere a una consulta realizada utilizando el lenguaje SQL de consultas a bases de datos. Donde se espesifica el 
+tipo de operacion UPDATE INSERT DELETE SELECT 
+        La funcion queda tal que asi: mysqli_query($nombreConexion, $query); normamente esta instruccionse guarda en una variable 
+
+g)La cláusula or die() se utiliza para
+        Capturar un error 
+
+h)y la función mysqli_error () se puede usar para
+        Devuelve el último mensaje de error para la llamada más reciente a una función de MySQLi que puede haberse ejecutado correctamente o haber fallado.
+
+i) Lo que sucede en el codigo es que mediante la fuincion  "mysqli_free_result" se libera el espacio de memoria asociado con la consulta,
+es decir, con el "$vResultado".
